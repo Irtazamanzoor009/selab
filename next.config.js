@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static export mode
+  output: 'export',
   images: {
-    unoptimized: true, // Ensures images work on static builds
+    unoptimized: true,
   },
+  basePath: '/selab',
+  assetPrefix: '/selab',
 };
 
 module.exports = nextConfig;
